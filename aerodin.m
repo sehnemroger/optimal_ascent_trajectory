@@ -17,7 +17,7 @@ ie=region;
 VR=(u^2+(v-r*WE*cos(i))^2)^0.5; %i é a inclinação do plano da orbita com relação ao equador.
 Mach=VR/Vsom(h);
 [FA,FN,Cx,gradCx,HessCx,CNx,gradCNx,HessCNx,rhoe]=FAero(Mach,alfa,X,VR,ie,Foguete);
-%Parciais de Cx
+%Parciais de Cx teste para commit
 Cxr=gradCx(1); Cxu=gradCx(2); Cxv=gradCx(3);
 Cxrr=HessCx(1,1); Cxru=HessCx(1,2); Cxrv=HessCx(1,3);
 Cxur=HessCx(2,1); Cxuu=HessCx(2,2); Cxuv=HessCx(2,3);
